@@ -185,6 +185,9 @@ if (cloudMode && cloudUrl) {
 /** @type {import('next').NextConfig} */
 export default {
   reactStrictMode: false,
+  serverRuntimeConfig: {
+    runtime: "edge"
+  },
   env: {
     basePath,
     cloudMode,
