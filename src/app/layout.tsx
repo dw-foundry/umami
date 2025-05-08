@@ -8,6 +8,8 @@ import 'react-basics/dist/styles.css';
 import '@/styles/index.css';
 import '@/styles/variables.css';
 
+export const runtime = 'edge';
+
 export default function ({ children }) {
   return (
     <html lang="en" data-scroll="0">
