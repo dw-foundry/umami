@@ -9,6 +9,7 @@
     "type": "git",
     "url": "https://github.com/umami-software/umami.git"
   },
+  "packageManager": "pnpm@9.15.9",
   "scripts": {
     "dev": "next dev",
     "dev-turbo": "next dev -p 3001 --turbopack",
