@@ -9,13 +9,9 @@ import {
   LoadingButton,
 } from 'react-basics';
 import { useContext, useState } from 'react';
-// import { getRandomChars } from '@/lib/crypto';
+import { getRandomChars } from '@/lib/crypto-alt';
 import { useApi, useMessages, useModified } from '@/components/hooks';
 import { WebsiteContext } from '@/app/(main)/websites/[websiteId]/WebsiteProvider';
-
-function getRandomChars(n: number, chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ') {
-  return Array.from({ length: n }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
-}
 
 const generateId = () => getRandomChars(16);
 
